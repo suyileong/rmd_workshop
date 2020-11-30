@@ -33,6 +33,10 @@ df <- df_raw %>% mutate(subfield = as.factor(subfield),
   select(-since)
 ```
 
+```{r}
+df <- df %>% filter(origin != "Oceania")
+```
+
 <!-- title page items -->
 Journals: Random Words With Random Data
 A Mock Paper for an R Markdown Workshop
